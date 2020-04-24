@@ -1,0 +1,88 @@
+/**index.wxss**/
+page{
+    height: 100%;
+}
+.active1{
+    width: 100%;
+    height: 64px;
+    background: white;
+    position:fixed;
+    float:left;
+    top:0;
+    left:0;
+    z-index: 50;
+}
+ec-canvas {
+  width: 100%;
+  height: 600rpx;
+  float: left;
+}
+.box_tab{
+  width: 100%;
+  height: 56rpx;
+  float: left;
+  margin-top:30rpx;
+  display: flex;
+  justify-content: center;
+
+}
+.tabbar{
+  width: 160rpx;
+	height: 54rpx;
+	background-color: #ffffff;
+	border: solid 1rpx #e1e1e1;
+  font-size: 22rpx;
+  line-height: 56rpx;
+	color: #666666;
+  text-align: center;
+  font-weight: 800;
+  
+}
+.active{
+  border: 1rpx solid #e1e1e1;
+  background-image: linear-gradient(0deg, 
+		#ff683a 0%, 
+		#ff8656 100%), 
+	linear-gradient(
+		#ffffff, 
+		#ffffff);
+  color: #ffffff;
+}
+.item{
+  border: 1rpx solid #e1e1e1;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+}
+.item1{
+  border: 1rpx solid #e1e1e1;
+  border-left: 0;
+  border-right:0;
+}
+.item2{
+  border: 1rpx solid #e1e1e1;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+.box_content{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top:45rpx;
+  text-align: center;
+}
+
+ec-canvas {
+    width: 100%;
+    height: 100%;
+}
+.container1 {
+    width: 100%;
+    height: 540rpx;
+    margin: 0 auto;
+    z-index: 0;
+    position: relative;
+    top:0rpx;
+    left: 0;
+    margin-top:12rpx;
+    float: left;
+}

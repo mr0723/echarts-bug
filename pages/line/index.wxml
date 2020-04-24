@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class='active1'>
+    <component title='折线图' show_bol='{{false}}'></component>
+</view>
+<view class="container" style='float:left;'>
+   <view class='box_tab'>
+        <view class="tabbar item {{activeIndex==0? 'active':''}}" id='0' bindtap="activeClick">今天</view>
+        <view class="tabbar item1 {{activeIndex==1? 'active':''}}" id='1' bindtap="activeClick">明天</view>
+        <view class="tabbar item2  {{activeIndex==2? 'active':''}}" id='2' bindtap="activeClick">本月</view>
+    </view>
+    <view class="box_content" hidden='{{activeIndex!=0}}'>
+        第一页
+        <view class="container1 " wx:if='{{activeIndex==0}}'>
+           
+            <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+        </view>
+    </view>
+    <view class="box_content" hidden='{{activeIndex!=1}}'>
+        第二页
+        <view class="container1 "wx:if='{{activeIndex==1}}' >
+            <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+        </view>
+    </view>
+    <view class="box_content" hidden='{{activeIndex!=2}}'>
+        44444
+    </view>
+    
+   
+</view>
+
